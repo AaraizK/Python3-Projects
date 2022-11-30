@@ -1,0 +1,8 @@
+student_status=input("Usask Student? ").capitalize()
+student_dept=input("Department?").capitalize()
+age=int(input("Age? "))
+
+if student_status=="Yes" and (student_dept == "Ict" or student_dept == "Physics" or student_dept == "Chemisrty") and age>=19:
+    print("Access Granted")
+else:
+    print("Access Denied")
