@@ -1,0 +1,18 @@
+text = open('cmpt.txt', 'r').read()
+#print(text)
+
+question = input("What is the keyword : ")
+if (question[0].isupper()):
+  q2 = question.lower()
+else:
+  q2 = question.capitalize()
+if question in text or q2 in text:
+  print("\nKEYWORD FOUND!!\n\n")
+else:
+  print("Sorry this word doesnt exist in the file")
+
+x = text.split('. ')
+
+for i in x:
+  if i.find(question) != -1 or i.find(q2) != -1:
+    print(i, ".")
