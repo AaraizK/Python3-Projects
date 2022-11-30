@@ -1,0 +1,25 @@
+"""The calc_project function with parameters grade and weight has been created"""
+
+def calc_project(project_grade,project_weight):
+    project_weighted_average=project_grade*project_weight
+    return project_weighted_average
+    
+"""The calc_assignments function with parameters a1_grade, a2_grade, a3_grade and weight has been created"""
+
+def calc_assignments(a1_grade,a2_grade,a3_grade,weight):
+    assignment_weighted_average=((weight)*(a1_grade+a2_grade+a3_grade))/3
+    return assignment_weighted_average
+
+"""The calc_assignments function with parameters a1_grade, a2_grade, a3_grade and weight has been created"""
+
+def calc_final():
+    project_grade=int(input("What grade did you achieve on the project? (%): "))
+    project_weight=float(input("What is the project worth? (0-1): "))
+    a1_grade=int(input("What grade did you achieve on assignment 1? (%): "))
+    a2_grade=int(input("What grade did you achieve on assignment 2? (%): "))
+    a3_grade=int(input("What grade did you achieve on assignment 3? (%): "))
+    weight=float(input("What are all the assignments combined worth? (0-1): "))
+    final_grade=calc_project(project_grade,project_weight)+calc_assignments(a1_grade,a2_grade,a3_grade,weight)
+    print("Final Grade: "+str(round(final_grade,2)) + "%")
+
+calc_final()
