@@ -1,0 +1,37 @@
+def madlib():
+  name=input("Enter a name :")
+  print("\n")
+  action1=input("Enter an Action ending with 'ing' :")
+  print("\n")
+  flower=input("Enter a flower -<@ :")
+  print("\n")
+  action2=input("Enter an Action ending with 'ing' :")
+  print("\n")
+  superhero=input("Enter your favorite Superhero :")
+  
+  print("\n")
+  print("\n")
+  print("\n")
+  
+  print(name+ " a bird was " +action1+ " while reading a book.")
+  print("\n")
+  print("After that she came accross a beatiful white " +flower+ ".")
+  print("\n")
+  print("Upon seeing it, Birdie started " +action2+ ".")
+  print("\n")
+  print("While dancing she saw " +superhero+ " and had to get an selfie.")
+
+  again()
+  
+def again():
+    again = input('''
+Do you want to calculate again?
+Please type Y for YES or N for NO.
+''')
+
+    if again.upper() == 'Y':
+        madlib()
+    elif again.upper() == 'N':
+        print('See you later.')
+    else:
+        again()
