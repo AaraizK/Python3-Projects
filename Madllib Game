@@ -25,7 +25,7 @@ def madlib():
   
 def again():
     again = input('''
-Do you want to calculate again?
+Do you want to play again?
 Please type Y for YES or N for NO.
 ''')
 
